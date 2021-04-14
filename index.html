@@ -13,13 +13,39 @@
 
 <body>
     <header>
-        <nav class="navbar ">
-            <div class="container-fluid 
-                        mt-4 pb-2
-                        border-bottom border-dark
-                        d-flex justify-content-end ">
-                <a class="navbar-brand link-dark" href="#profil">PROFIL</a>
-                <a class="navbar-brand link-dark" href="#parcours">PARCOURS</a>
+        <nav class="navbar 
+                    container-fluid 
+                    position-fixed 
+                    pt-4 pb-2
+                    border-bottom border-dark
+                    d-flex 
+                    justify-content-center justify-content-md-end 
+
+                    bg-danger">
+            <!-- CLASSIC MENU  -->
+            <div class="d-none d-md-block
+                        
+                        bg-warning">
+                <a class="navbar-brand link-dark text-center" href="#profil">PROFIL</a>
+                <a class="navbar-brand link-dark text-center" href="#parcours">PARCOURS</a>
+            </div>
+            <!-- DROPDOWN MENU  -->
+            <div class="dropdown
+                        d-sm-flex d-md-none 
+
+                        bg-warning">
+                <a id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="img-fluid" src="./assets/logos/layers_icon_153563.svg" alt="">
+                </a>
+                <ul class="dropdown-menu
+                        container-fluid
+                        border-0
+                        
+                        bg-primary" 
+                        aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">PROFIL</a></li>
+                    <li><a class="dropdown-item" href="#">PARCOURS</a></li>
+                </ul>
             </div>
         </nav>
     </header>
