@@ -39,6 +39,9 @@ header img {
     justify-content: center;
 }
 /* PROFIL________________________________________________________________  */
+#presentation p {
+    text-align: justify;
+}
 #photo-profil {
     width: 150px;
     border-radius: 100%;
@@ -55,6 +58,20 @@ header img {
 #infoAdapt {
     color: black;
 }
+/* LANGAGES __________________________________________________________  */
+#langages .langage img {
+    width: 150px;
+    /* background-color:rgb(235, 109, 109); */
+}
+#langages .langage {
+    position: relative;
+}
+#langages .langage div {
+    position: absolute;
+    top: 3%;
+    left: 15%;
+}
+
 /* ////////////////////////////////////////////////////// */
 footer img {
     width: 4vh;
