@@ -23,19 +23,26 @@ header img {
     align-items: center;
     justify-content: center;
 }
+/* PROFIL________________________________________________________________  */
+#photo-profil {
+    /* position: absolute;
+    top: 50%;
+    right: 0%; */
+    transform: translateX(50%);
+    width: 150px;
+    border-radius: 100%;
+    /* border: solid 1px black; */
+    /* background-color: yellow; */
+}
 /* __________________________________________________________  */
 
 /* ////////////////////////////////////////////////////// */
-/* #photo-profil {
-    width: 75px;
-    background-color: yellow;
-}
 nav {
-    background-color: rgb(216, 83, 83);
+    /* background-color: rgb(216, 83, 83); */
 }
 div .container {
-    background-color: rgb(107, 107, 223);
-} */
+    /* background-color: rgb(107, 107, 223); */
+}
 footer {
     /* position: fixed;
     height: 50px;

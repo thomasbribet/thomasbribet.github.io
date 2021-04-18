@@ -18,10 +18,18 @@ window.addEventListener("hashchange", highlight);
 
 // DROPDOWN MENU 
 
-var btn = document.querySelector('#dropdownMenuLogo');
-var menu = document.querySelector('#dropdownMenu div');
-btn.addEventListener('click', () => {
-    menu.classList.toggle('visible');
-});
+var dropdown = function(btnMenu, hiddenMenu) {
+    var btn = document.querySelector(btnMenu);
+    var menu = document.querySelector(hiddenMenu);
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('visible');
+    });
+};
+// navbar 
+dropdown('#dropdownMenuLogo', '#dropdownMenu div');
+// profil 
+dropdown('#creatif', '#creatif div');
+dropdown('#adapt', '#adapt div');
+dropdown('#rigueur', '#rigueur div');
 
 ////////////////////////////////////////////////////////////////////////
