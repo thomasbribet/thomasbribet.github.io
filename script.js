@@ -1,7 +1,7 @@
 // HIGHLIGHT CURRENT PAGE 
 
 var highlight = function() {
-    var navPage = document.querySelectorAll("nav a");
+    var navPage = document.querySelectorAll("#classicMenu div a");
     var currentLocation = location.hash.substring(1);
     for(let i = 0; i<navPage.length; i++) {
         if(navPage[i].innerHTML === currentLocation.toUpperCase()) {
