@@ -1,0 +1,35 @@
+/* PROFIL________________________________________________________________  */
+#presentation p {
+    text-align: justify;
+}
+#stage {
+    color: white;
+    background-color: rgb(177, 177, 177);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+/* SOFT SKILLS __________________________________________________________  */
+#softSkills h2 {
+    cursor: pointer;
+}
+#softSkills a:hover {
+    filter: invert(1);
+}
+#infoAdapt {
+    color: black;
+}
+
+/* LANGAGES __________________________________________________________  */
+#langages .langage img {
+    width: 150px;
+}
+#langages .langage {
+    position: relative;
+}
+#langages .langage div {
+    position: absolute;
+    top: 3%;
+    left: 15%;
+}
