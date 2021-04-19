@@ -42,9 +42,15 @@ header img {
 #presentation p {
     text-align: justify;
 }
-#photo-profil {
-    width: 150px;
-    border-radius: 100%;
+#presentation p img {
+    width: 250px;
+}
+#stage {
+    color: white;
+    background-color: rgb(177, 177, 177);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 /* SOFT SKILLS __________________________________________________________  */
 

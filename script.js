@@ -63,8 +63,8 @@ var hoursOfPractice = function(langId, start, incrementInHours) { // incrementIn
    
 }
 
-hoursOfPractice('html', '2020/03/01', 5); 
-hoursOfPractice('css', '2020/03/08', 5);
+hoursOfPractice('html', '2020/03/01', 6); 
+hoursOfPractice('css', '2020/03/08', 6);
 hoursOfPractice('js', '2021/03/01', 8);
 hoursOfPractice('sql', '2020/04/01', 1);
 hoursOfPractice('php', '2020/04/01', 0.5);
