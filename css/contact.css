@@ -1,1 +1,8 @@
 /* FORM  */
+.form-control {
+    border-radius: 0;
+    border: solid 2px black;
+}
+.form-control :focus-within {
+    outline: 1em solid black;
+}
