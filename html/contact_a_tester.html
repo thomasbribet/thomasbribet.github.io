@@ -1,0 +1,46 @@
+<div class="d-flex flex-column align-items-center bg-warning">
+    <!-- FORM  -->
+   <div class="form-container col-12 pb-5">
+       <h1 class="h1 pb-4">Écrivez-moi</h1>
+       <form id="reused_form">
+           <!-- NAME & EMAIL  -->
+           <div class="d-flex justify-content-between flex-wrap">
+               <!-- NAME  -->
+               <div class="col-12 col-lg-4 form-floating mb-3">
+                   <input id="name" class="validate form-control" type="text" name="name" placeholder="Nom" required>
+                   <label for="name">Nom</label>
+               </div>
+               <!-- EMAIL  -->
+               <div class="col-12 col-lg-7 form-floating mb-3">
+                   <input id="email" class="validate form-control" type="email" name="email" placeholder="E-mail" required>
+                   <label for="email">Adresse email</label>
+               </div>
+           </div>
+           <!-- MESSAGE  -->
+           <div class="form-floating">
+               <textarea id="message" class="validate form-control" name="message" style="height: 200px" placeholder="Ici votre message..." ></textarea>
+               <label for="message">Votre message</label>
+           </div>
+           <!-- VALIDATION BTN  -->
+           <div class="d-flex justify-content-end pt-3">
+               <button class="form-button btn btn-lg btn-outline-dark border-2" type="submit" style="border-radius: 0%;">Envoyer</button>
+           </div>
+       </form>
+
+       <div id="error_message" style="width:100%; height:100%; display:none; ">
+           <h4>Une erreur s'est produite, veuillez rééssayer</h4> 
+       </div>
+       <div id="success_message" style="width:100%; height:100%; display:none; ">
+           <h4>Message envoyé !</h4>
+       </div>
+   </div>
+   <!-- TEL  -->
+   <div class="py-4 col-12 col-sm-8 col-lg-7">
+       <div class="d-flex justify-content-center align-items-center">
+           <p class="fs-5 mx-2"><a class="text-decoration-none text-dark" href="+33679277327">+33 6 79 27 73 27</a></p>
+           <p class="mx-2">
+               <a href="+33679277327"><img class="h-100 p-2 m-0 border border-2 border-dark rounded-circle" style="width: 50px;" src="./assets/logos/social/phone_icon_153548.svg" alt=""></a> 
+           </p>
+       </div>
+   </div>
+</div>
