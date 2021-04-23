@@ -18,7 +18,7 @@
                     border-bottom border-dark border-2">
             <!-- CLASSIC MENU  -->
             <div id="classicMenu" class="d-none d-md-flex justify-content-between align-items-center">
-                <a id="dl-cv" class="text-center p-3 mb-1 fs-5 text-decoration-none" href="./assets/cv.pdf" target="_blank">TÉLÉCHARGER MON CV</a>
+                <a id="dl-cv" class="text-center p-3 mb-1 fs-5 text-decoration-none" href="./assets/cv.pdf" target="_blank">monCV.pdf</a>
                 <div>
                     <a class="page link-dark text-center p-3 mx-1 fs-5 text-decoration-none" href="#profil">PROFIL</a>
                     <a class="page link-dark text-center p-3 mx-1 fs-5 text-decoration-none" href="#parcours">PARCOURS</a>
@@ -30,7 +30,7 @@
                                             justify-content-between
                                             align-items-start
                                             ">
-                <a href="./assets/cv.pdf" target="_blank"><img src="./assets/logos/file_download_pdf_icon_153420.svg" alt=""></a>
+                <a href="./assets/cv.pdf" target="_blank"><img src="./assets/logos/file_pdf_icon_153412.svg" alt=""></a>
                 <div id="menu" class="hide">
                     <a class="page link-dark text-center p-1 fs-5 text-decoration-none" href="#profil">PROFIL</a>
                     <a class="page link-dark text-center p-1 fs-5 text-decoration-none" href="#parcours">PARCOURS</a>
@@ -44,16 +44,23 @@
 
     <main class="container-fluid col-12 col-md-8 col-xl-6 pt-2 pb-5 ">
         <!-- SITUATION ACTUELLE  -->
-        <div class="d-flex justify-content-between">
-            <!-- <img class="bg-primary img-fluid" style="width: 20%;" src="./assets/logos/logo-ort.png" alt=""> -->
-            <div class="d-flex flex-column align-items-center">
-                <h1 class="h1">En formation</h1>
-                <p>"Concepteur Développeur d'Applications" à l'ORT de Toulouse.</p>
+        <div class="d-flex justify-content-center pb-5 bg-">
+            <!-- <img class="bg- img-fluid" style="width: 20%;" src="./assets/logos/ort.svg" alt=""> -->
+            <div class="col-12 d-flex flex-column align-items-center bg-">
+                <h1 class="col-12 bg-">Actuellement</h1>
+                <p class="fs-5 text-center pt-4">En formation "Concepteur Développeur d'Applications" à l'ORT de Toulouse.</p>
+                <!-- DETAILS FORMATION  -->
+                <div id="detailsFormation" class="col-12 text-center pb-5 bg-">
+                    <p style="cursor: pointer;">Plus de détails &#9660;</p>
+                    <div class="hide">
+                        <p>ugefzuezy</p>
+                    </div>
+                </div>
                 <!-- PROGRESS BAR -->
-                <div class="progress border border-2 border-dark" style="width: 100%; border-radius: 0%;">
-                    <div id="progressFormation" class="progress-bar w-75 bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress border border-2 border-dark my-1 bg-white" style="width: 90%; border-radius: 0%; height: 30px;">
+                    <div id="progressFormation" class="progress-bar bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
                 </div>
-                <div class="d-flex justify-content-between py-1 bg-" style="height: 15%; width: 100%;">
+                <div class="d-flex justify-content-between py-1 bg-" style="height: 10%; width: 90%;">
                     <div class="border-start border-2 border-dark bg-dark" style="height: 100%;"></div>
                     <div class="border-start border-2 border-dark bg-dark" style="height: 100%;"></div>
                     <div class="border-start border-2 border-dark bg-dark" style="height: 100%;"></div>
@@ -63,9 +70,65 @@
                     <div class="border-start border-2 border-dark bg-dark" style="height: 100%;"></div>
                     <div class="border-start border-2 border-dark bg-dark" style="height: 100%;"></div>
                 </div>
-                <div class="d-flex justify-content-between bg-" style="width: 100%;">
-                    <div style="font-size: 0.75em;"><span>Fév. 21</span></div>
-                    <div style="font-size: 0.75em;"><span>Fév. 21</span></div>
+                <div class="d-flex justify-content-between bg- pt-3" style="width: 100%;">
+                    <div class="bg-" style="font-size: 0.8em; transform: rotate(-90deg);"><span>Fév. 21</span></div>
+                    <div class="bg-" style="font-size: 0.8em; transform: rotate(-90deg);"><span>Sept. 21</span></div>
+                </div>
+            </div>
+        </div>
+        <!-- DIPLOMES ET FORMATIONS  -->
+        <div id="formations" class="d-flex flex-column align-items-center py-4 bg-">
+            <h1 class="col-12 mb-3 bg-" style="cursor: pointer;">Diplômes et formations &#9660;</h1>
+            <!-- LISTE FORMATIONS -->
+            <div class="hide col-12">
+                <div class="d-md-flex justify-content-between">
+                    <!-- formations  -->
+                    <div class="col-md-5">
+                        <div class="my-4">
+                            <p class="my-2 fs-5 text-md-end"><span class="fst-italic">Novembre - Décembre 2020</span> <br>
+                            <span class="fw-bold fs-4">Formation "Langage de programmation Java"</span> <br>
+                            <span>ORT - Toulouse</span></p>
+                        </div>
+                        <div class="my-4">
+                            <p class="my-2 fs-5 text-md-end"><span class="fst-italic">Mars - Juin 2020</span> <br>
+                            <span class="fw-bold fs-4">MOOCs HTML/CSS; PHP/MySQL; Linux</span> <br>
+                            <span>Open Classroom / w3schools</span></p>
+                        </div>
+                    </div>
+                    <!-- diplômes  -->
+                    <div class="col-md-5">
+                        <div class="my-4">
+                            <p class="my-2 fs-5"><span class="fst-italic">Septembre 2015 - Juin 2016</span> <br>
+                            <span class="fw-bold fs-4">CAP Couturier-Tailleur</span> <br>
+                            <span>ID Coupe et Couture - Toulouse</span></p>
+                        </div>
+                        <div class="my-4">
+                            <p class="my-2 fs-5"><span class="fst-italic">Septembre 2011 - Juin 2013</span> <br>
+                            <span class="fw-bold fs-4">BTS Analyses de Biologie Médicale</span> <br>
+                            <span>Lycée Jolimont - Toulouse</span></p>
+                        </div>
+                        <div class="my-4">
+                            <p class="my-2 fs-5"><span class="fst-italic">Septembre 2007 - Juillet 2010</span> <br>
+                            <span class="fw-bold fs-4">Licence de Droit</span> <br>
+                            <span>UT 1 - Toulouse</span></p>
+                        </div>
+                        <div class="my-4">
+                            <p class="my-2 fs-5"><span class="fst-italic">Juin 2007</span> <br>
+                            <span class="fw-bold fs-4">Baccalauréat Scientifique (SVT)</span> <br>
+                            <span>Lycée Berthelot - Toulouse</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- EXPERIENCES PRO  -->
+        <div id="xpPro" class="d-flex flex-column align-items-center py-4 bg-">
+            <h1 class="col-12 mb-3 bg-" style="cursor: pointer;">Expériences professionnelles &#9660;</h1>
+            <!-- LISTE FORMATIONS -->
+            <div class="hide col-12">
+                <!-- années -->
+                <div class="d-md-flex justify-content-between">
+                    <h3 class="h1">2020</h3>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-// HIGHLIGHT CURRENT PAGE 
+// HIGHLIGHT CURRENT PAGE (toutes pages)
 
 var highlight = function() {
     var navPage = document.querySelectorAll("nav .page");
@@ -16,7 +16,7 @@ window.addEventListener("hashchange", highlight);
 
 ////////////////////////////////////////////////////////////////////////
 
-// DROPDOWN MENU 
+// DROPDOWN MENU (toutes pages)
 
 var dropdown = function(btnMenu, hiddenMenu) {
     var btn = document.querySelector(btnMenu);
@@ -27,14 +27,20 @@ var dropdown = function(btnMenu, hiddenMenu) {
 };
 // navbar 
 dropdown('#dropdownMenuLogo', '#dropdownMenu div');
+
 // profil 
-dropdown('#creatif', '#creatif div');
-dropdown('#adapt', '#adapt div');
-dropdown('#rigueur', '#rigueur div');
+// dropdown('#creatif', '#creatif div');
+// dropdown('#adapt', '#adapt div');
+// dropdown('#rigueur', '#rigueur div');
+
+// parcours
+dropdown('#detailsFormation', '#detailsFormation div');
+dropdown('#formations', '#formations div');
+dropdown('#xpPro', '#xpPro div');
 
 ////////////////////////////////////////////////////////////////////////
 
-// INCREMENTATION COMPETENCES 
+// INCREMENTATION COMPETENCES (page profil)
 
 var hoursOfPractice = function(langId, start, incrementInHours) { // incrementInHours = hours of practice add each week
     var badge = document.getElementById(langId);
@@ -63,12 +69,36 @@ var hoursOfPractice = function(langId, start, incrementInHours) { // incrementIn
    
 }
 
-hoursOfPractice('html', '2020/03/01', 6); 
-hoursOfPractice('css', '2020/03/08', 6);
-hoursOfPractice('js', '2021/03/01', 8);
-hoursOfPractice('sql', '2020/04/01', 1);
-hoursOfPractice('php', '2020/04/01', 0.5);
+// hoursOfPractice('html', '2020/03/01', 6); 
+// hoursOfPractice('css', '2020/03/08', 6);
+// hoursOfPractice('js', '2021/03/01', 8);
+// hoursOfPractice('sql', '2020/04/01', 1);
+// hoursOfPractice('php', '2020/04/01', 0.5);
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////:
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// 
+// PROGRESS BAR FORMATION (page parcours)
+
+var progressFormation = function() {
+    var endDate = new Date("2021/09/15"); // Fin formation
+    var startDate = new Date("2021/02/22"); // Début formation
+    var currentDate = new Date();
+    
+    var total = startDate.getTime() - endDate.getTime();
+    var current = startDate.getTime() - currentDate.getTime();
+    var percentageProgress = Math.round((current/total)*100);
+    var percentString = "width: " + percentageProgress.toString() + "%"; // conversion en String avant intégration dans "style"
+    
+    var progressBar = document.getElementById("progressFormation");
+    progressBar.setAttribute("style", percentString);
+}
+
+progressFormation();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// PROGRESS BAR DETAILS FORMATION (page parcours)
+
+var progressDetails = function() {
+
+}
