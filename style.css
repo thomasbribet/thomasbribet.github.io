@@ -1,29 +1,57 @@
 @import url(./css/profil.css);
 @import url(./css/contact.css);
+@import url(./css/parcoursTimeline.css);
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(./assets/fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(./assets/fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+}
+@font-face {
+    font-family: "IBM-Regular";
+    src: url(./assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
+
+/* GÉNÉRAL _______________________________________________________ */
+h1 {
+    color: #1f4c8bff;
+    font-family: "Montserrat-Light";
+}
+p {
+    font-family: "IBM-Regular";
+}
+h2 {
+    font-family: "Montserrat-Light";
+    font-size: 1.5em;
+}
 
 /* NAV CLASSIC MENU ______________________________________________ */
 header a {
+    font-family: "Montserrat-Medium";
+    /* font-weight: bold; */
     text-decoration: none;
-    font-size: 1.5em;
-    border: solid 2px white;
+    font-size: 1.75em;
+    border: solid 2px whitesmoke;
 }
 #dl-cv {
-    background-color: white;
-    color: black;
-    border: solid 2px black;
-}
-#dl-cv:hover {
-    background-color: black;
-    border: solid 2px black;
+    background-color: #1f4c8bff;
+    border: solid 2px #1f4c8bff;
     color: white;
 }
 #classicMenu div a:hover {
-    border: solid 2px black;
+    border-bottom: solid 2px black;
 }
 nav #activeNavPage {
-    background-color:black;
+    background-color:#1f4c8bff;
     color: white;
-    border: solid 2px black;
+    border: solid 2px #1f4c8bff;
 }
 
 /* NAV DROPDOWN MENU ____________________________________________ */
@@ -46,5 +74,10 @@ header img {
 /* FOOTER ___________________________________________________ */
 footer img {
     width: 4vh;
+}
+
+/* PARCOURS __________________________________________________ */
+#progressFormation {
+    background-color: #1f4c8bff;
 }
 

@@ -5,9 +5,7 @@
 #stage {
     color: white;
     background-color: rgb(177, 177, 177);
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-radius: 0%;
 }
 
 /* SOFT SKILLS __________________________________________________________  */
@@ -32,4 +30,10 @@
     position: absolute;
     top: 3%;
     left: 15%;
+}
+#langages p {
+    font-family: sans-serif;
+}
+#notesCompetences {
+    font-family: sans-serif;
 }

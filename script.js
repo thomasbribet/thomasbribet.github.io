@@ -29,14 +29,17 @@ var dropdown = function(btnMenu, hiddenMenu) {
 dropdown('#dropdownMenuLogo', '#dropdownMenu div');
 
 // profil 
-// dropdown('#creatif', '#creatif div');
-// dropdown('#adapt', '#adapt div');
-// dropdown('#rigueur', '#rigueur div');
+dropdown('#creatif', '#creatif div');
+dropdown('#adapt', '#adapt div');
+dropdown('#rigueur', '#rigueur div');
 
 // parcours
-dropdown('#detailsFormation', '#detailsFormation div');
-dropdown('#formations', '#formations div');
-dropdown('#xpPro', '#xpPro div');
+// dropdown('#detailsFormation', '#detailsFormation div');
+// dropdown('#formations', '#formations div');
+// dropdown('#un', '#un div');
+// dropdown('#deux', '#deux div');
+// dropdown('#trois', '#trois div');
+// dropdown('#quatre', '#quatre div');
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -69,11 +72,11 @@ var hoursOfPractice = function(langId, start, incrementInHours) { // incrementIn
    
 }
 
-// hoursOfPractice('html', '2020/03/01', 6); 
-// hoursOfPractice('css', '2020/03/08', 6);
-// hoursOfPractice('js', '2021/03/01', 8);
-// hoursOfPractice('sql', '2020/04/01', 1);
-// hoursOfPractice('php', '2020/04/01', 0.5);
+hoursOfPractice('html', '2020/03/01', 6); 
+hoursOfPractice('css', '2020/03/08', 6);
+hoursOfPractice('js', '2021/03/01', 8);
+hoursOfPractice('sql', '2020/04/01', 1);
+hoursOfPractice('php', '2020/04/01', 0.5);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
