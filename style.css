@@ -31,6 +31,14 @@ h2, h3 {
     font-family: "Montserrat-Light";
     font-size: 1.5em;
 }
+.hide {
+    display: none;
+}
+
+/* DISPLAY PAGE CONTENT  */
+#activeContent {
+    display: block;
+}
 
 /* NAV CLASSIC MENU ______________________________________________ */
 header a {
@@ -39,11 +47,6 @@ header a {
     text-decoration: none;
     font-size: 1.75em;
     border: solid 2px whitesmoke;
-}
-#dl-cv {
-    background-color: #1f4c8bff;
-    border: solid 2px #1f4c8bff;
-    color: white;
 }
 #classicMenu div a:hover {
     border-bottom: solid 2px black;
@@ -56,13 +59,10 @@ nav #activeNavPage {
 
 /* NAV DROPDOWN MENU ____________________________________________ */
 header img {
-    width: 7vh;
+    width: 8vh;
 }
 #menu a {
     margin: 5px;
-}
-.hide {
-    display: none;
 }
 .visible {
     display: flex;

@@ -1,21 +1,3 @@
-// HIGHLIGHT CURRENT PAGE (toutes pages)
-
-var highlight = function() {
-    var navPage = document.querySelectorAll("nav .page");
-    var currentLocation = location.hash.substring(1);
-    for(let i = 0; i<navPage.length; i++) {
-        if(navPage[i].innerHTML === currentLocation.toUpperCase()) {
-            navPage[i].id = "activeNavPage";
-        } else {
-            navPage[i].id = "";
-        }
-    }
-}
-
-window.addEventListener("hashchange", highlight);
-
-////////////////////////////////////////////////////////////////////////
-
 // DROPDOWN MENU (toutes pages)
 
 var dropdown = function(btnMenu, hiddenMenu) {
@@ -25,6 +7,7 @@ var dropdown = function(btnMenu, hiddenMenu) {
         menu.classList.toggle('visible');
     });
 };
+
 // navbar 
 dropdown('#dropdownMenuLogo', '#dropdownMenu div');
 
@@ -34,12 +17,47 @@ dropdown('#adapt', '#adapt div');
 dropdown('#rigueur', '#rigueur div');
 
 // parcours
-// dropdown('#detailsFormation', '#detailsFormation div');
-// dropdown('#formations', '#formations div');
-// dropdown('#un', '#un div');
-// dropdown('#deux', '#deux div');
-// dropdown('#trois', '#trois div');
-// dropdown('#quatre', '#quatre div');
+dropdown('#detailsFormation', '#detailsFormation div');
+dropdown('#formations', '#formations div');
+
+////////////////////////////////////////////////////////////////////////
+
+var router = function() {
+    var currentLocation = window.location.hash.substring(1);
+    var pageContent = document.querySelectorAll(`div.pageContent`);
+    if(currentLocation === "") {
+        currentLocation = "profil";
+    }
+    for(let i=0; i<pageContent.length; i++){
+        if(pageContent[i].id !== currentLocation) {
+            pageContent[i].classList.add('hide');
+        } else {
+            pageContent[i].classList.remove('hide');
+        }
+    }
+} 
+
+////////////////////////////////////////////////////////////////////////
+
+// HIGHLIGHT CURRENT PAGE (toutes pages)
+
+var highlight = function() {
+    var navPage = document.querySelectorAll("nav .page");
+    var currentLocation = location.hash.substring(1);
+    if(currentLocation === "") {
+        currentLocation = "profil";
+    }
+    for(let i = 0; i<navPage.length; i++) {
+        if(navPage[i].innerHTML === currentLocation.toUpperCase()) {
+            navPage[i].id = "activeNavPage";
+            router();
+        } else {
+            navPage[i].id = "";
+        }
+    }
+}
+highlight();
+window.addEventListener("hashchange", highlight);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -102,6 +120,6 @@ progressFormation();
 
 // PROGRESS BAR DETAILS FORMATION (page parcours)
 
-var progressDetails = function() {
+// var progressDetails = function() {
 
-}
+// }
