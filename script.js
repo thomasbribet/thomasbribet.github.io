@@ -22,6 +22,8 @@ dropdown('#formations', '#formations div');
 
 ////////////////////////////////////////////////////////////////////////
 
+// ROUTEUR (toutes les pages)
+
 var router = function() {
     var currentLocation = window.location.hash.substring(1);
     var pageContent = document.querySelectorAll(`div.pageContent`);
