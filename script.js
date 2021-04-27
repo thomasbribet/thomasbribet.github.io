@@ -19,6 +19,7 @@ dropdown('#rigueur', '#rigueur div');
 // parcours
 dropdown('#detailsFormation', '#detailsFormation div');
 dropdown('#formations', '#formations div');
+dropdown('#xpPro', '#xpPro section');
 
 ////////////////////////////////////////////////////////////////////////
 
