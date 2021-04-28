@@ -2216,9 +2216,11 @@ const longueurPlanning = planning.length;
 var dureeTotale = []; // durée totale de chaque matière, en heures
 var dureeToday = []; // durée totale de chaque matière jusqu'à la date du jour
 
-var detailsFormation = function(nomCours) {
+var detailsFormation = function(nomCours, htmlId) {
     for(let i=0; i<longueurPlanning; i++) { 
-
+      // liste des cours ----------------------------------
+      // console.log(planning[i].Subject);
+      // -------------------------------------------------- 
         if(planning[i].Subject === nomCours) {
             // durée totale (en heures) de la matière passée en paramètre
             var duration = planning[i]["End Time"].substring(0,2) - planning[i]["Start Time"].substring(0,2); 
@@ -2239,19 +2241,29 @@ var detailsFormation = function(nomCours) {
     for(let j=0; j<dureeTotale.length; j++) {
         total += dureeTotale[j];
     }
-    console.log(total);
+    // console.log(total);
 
     // affichage du nombre d'heures de la matère jusqu'à aujourd'hui
     var enCours = 0;
     for(let k=0; k<dureeToday.length; k++) {
         enCours += dureeToday[k];
     }
-    console.log(enCours);
+    // console.log(enCours);
 
     // arrondi de l'avancement (en pourcentage) de la matière
     var percent = Math.round((enCours/total)*100);
-    console.log(percent);
+    // console.log(percent);
+
+    // intégration dans la page html
+    var displayHours = document.querySelector(`#${htmlId} span`);
+    var displayPercent = document.querySelector(`#${htmlId} .progress-bar`);
+    console.log(displayPercent);
+
+    displayHours.innerHTML = `${enCours}/${total}h`;
+    var dispHoursString = `width: ${percent.toString()}%;`;
+    // console.log(dispHoursString);
+    displayPercent.setAttribute("style", dispHoursString);
 }
 
-detailsFormation("ANGLAIS");
+// detailsFormation("Méthodes Agiles", "methodesAgiles");
 
