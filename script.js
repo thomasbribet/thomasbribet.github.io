@@ -2220,34 +2220,38 @@ var detailsFormation = function(nomCours) {
     for(let i=0; i<longueurPlanning; i++) { 
 
         if(planning[i].Subject === nomCours) {
-            // durée de chaque cours
+            // durée totale (en heures) de la matière passée en paramètre
             var duration = planning[i]["End Time"].substring(0,2) - planning[i]["Start Time"].substring(0,2); 
             // on ajoute cette durée au tableau
             dureeTotale.push(duration); 
 
-            console.log(planning[i]["End Date"].getTime());
+            // Nombre d'heures de cours jusqu'à aujourd'hui, pour la matière passée en paramètre
             var today = new Date();
-            console.log(today.getTime());
-            if(planning[i]["End Date"] <= today) {
+            // conversion de la date du cours en ms
+            var courseDate = Date.parse(planning[i]["End Date"]);
+            if(courseDate <= today.getTime()) {
                 dureeToday.push(duration);
-                // console.log(dureeToday);
             }
         }
     }
+    // affichage du total d'heures pour la matière passée en paramètre
     var total = 0;
     for(let j=0; j<dureeTotale.length; j++) {
-        // on ajoute les durées du tableau entre elles
         total += dureeTotale[j];
     }
-    // affichage du total d'heures pour la matière passée en paramètre
     console.log(total);
 
+    // affichage du nombre d'heures de la matère jusqu'à aujourd'hui
     var enCours = 0;
     for(let k=0; k<dureeToday.length; k++) {
         enCours += dureeToday[k];
     }
-    // console.log(enCours);
+    console.log(enCours);
+
+    // arrondi de l'avancement (en pourcentage) de la matière
+    var percent = Math.round((enCours/total)*100);
+    console.log(percent);
 }
 
-detailsFormation("UML");
+detailsFormation("ANGLAIS");
 
