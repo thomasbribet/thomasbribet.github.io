@@ -7,16 +7,21 @@
     background-color: #939597;
     border-radius: 0%;
 }
-
-/* SOFT SKILLS __________________________________________________________  */
-#softSkills h2 {
-    cursor: pointer;
+#stage a {
+    background-color: white;
+    color: #939597;
+    padding: 20px;
+    margin-top: 2vh;
+    font-size: 1.5em;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    border: 1px solid white;
 }
-#softSkills a:hover {
-    filter: invert(1);
-}
-#infoAdapt {
-    color: black;
+#stage a:hover {
+    background-color: #939597;
+    border: 1px solid white;
+    color: white;
 }
 
 /* LANGAGES __________________________________________________________  */
@@ -29,11 +34,16 @@
 #langages .langage div {
     position: absolute;
     top: 3%;
-    left: 15%;
+    left: 25%;
 }
 #langages p {
     font-family: sans-serif;
 }
 #notesCompetences {
     font-family: sans-serif;
+}
+
+/* =================================================================================  */
+
+@media screen and (max-width: 768px) {
 }

@@ -11,12 +11,8 @@
     src: url(./assets/fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
 }
 @font-face {
-    font-family: "IBM-Regular";
-    src: url(./assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Playfair";
-    src: url(./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
 /* GÉNÉRAL _______________________________________________________ */
@@ -26,14 +22,11 @@ h1 {
     font-size: 6vh;
 }
 p {
-    font-family: "IBM-Regular";
+    font-family: "Roboto";
 }
 h2, h3, h4 {
     font-family: "Montserrat-Light";
     font-size: 1.5em;
-}
-.hide {
-    display: none;
 }
 
 /* DISPLAY PAGE CONTENT  */
@@ -44,10 +37,8 @@ h2, h3, h4 {
 /* NAV CLASSIC MENU ______________________________________________ */
 header a {
     font-family: "Montserrat-Medium";
-    /* font-weight: bold; */
     text-decoration: none;
     font-size: 1.75em;
-    border: solid 2px whitesmoke;
 }
 #classicMenu div a:hover {
     border-bottom: solid 2px black;
@@ -65,20 +56,58 @@ header img {
 #menu a {
     margin: 5px;
 }
+/* toggle fonction avec la classe "visible */
+.hide {
+    display: none;
+}
 .visible {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: apparition 0.3s ease-in-out;
 }
-
-/* FOOTER ___________________________________________________ */
-footer img {
-    width: 4vh;
+#dropdownMenu .visible {
+    margin-top: 30vh;
+    margin-bottom: 50vh;
+}
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 /* PARCOURS __________________________________________________ */
 #progressFormation {
     background-color: #1f4c8bff;
 }
+/* bouton "en savoir plus"  */
+#plusBtn {
+    background-color: white;
+    color: #939597;
+    padding: 20px;
+    margin-top: 2vh;
+    font-size: 1.5em;
+    width: 60%;
+    align-self: center;
+    display: flex;
+    border: 1px solid white;
+}
+#plusBtn:hover {
+    background-color: #939597;
+    border: 1px solid white;
+    color: white;
+}
 
+/* ==========================================================================  */
+
+@media screen and (max-width: 1520px) {
+    #plusBtn {
+        width: 100%;
+    }
+}

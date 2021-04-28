@@ -12,10 +12,8 @@
 </head>
 
 <body style="background-color: whitesmoke;">
-    <header>
-        <nav class="container 
-                    py-2 pt-md-3 mb-5
-                    border-bottom border-dark border-1">
+    <header class="container-fluid" style="background-color: rgb(231, 231, 231);">
+        <nav class="container py-2 py-md-1 pt-md-3 mb-4 border-md-bottom border-dark border-1">
             <!-- CLASSIC MENU  -->
             <div id="classicMenu" class="d-none d-md-flex justify-content-between align-items-center">
                 <a id="dl-cv" class="p-3 mb-1" href="./assets/cv.pdf" target="_blank"><img src="./assets/logos/file_pdf_icon_153412.svg" alt=""></a>
@@ -39,49 +37,54 @@
     </header>
 <!-- __________________________________________________________________________________________________________________________________  -->
 
-    <main class="container-fluid col-12 col-md-8 col-xl-6 pt-2 pb-5 ">
-        <!-- <div id="main"> -->
-            <!-- -----------------------------------------------------------------------------------  -->
+    <main class="container-fluid col-12 col-md-10 col-xl-8 pb-5 ">
         <div id="profil" class="pageContent">
             <!-- PRESENTATION  -->
             <div>
                 <h1>Présentation</h1>
-                <div id="presentation" class="container my-5 p-3 d-lg-flex justify-content-between align-items-center shadow-sm bg-white">
-                    <p class="p-md-5 mx-md-5 fs-5 col-lg-6">Autodidacte en <strong class="fw-bolder">HTML/CSS, PHP/MySQL, Linux</strong>, j'ai ensuite acquis les bases et les principes de la programmation orientée objet lors d'une formation sur le <span class="fw-bolder">langage Java</span>. <br> 
-                    Mon cursus actuel approfondit ces <a class="text-dark" href="#langages">compétences</a> et en développe de nouvelles. Notamment <strong class="fw-bolder">concevoir</strong> une application, <strong class="fw-bolder">gérer un projet</strong> informatique et <strong class="fw-bolder">développer</strong> une application multi-supports avec les technologies du Web.</p>
-                    <p id="stage" class="fs-4 px-4 py-5 mx-md-5 col-lg-5 shadow">Aujourd'hui, je recherche un stage de deux mois (non rémunéré) qui consolidera mes connaissances et les mettra en pratique dans le quotidien d'une entreprise. <br> <br>
-                    <a class="text-white fw-bold" href="#contact">Contactez-moi</a>
-                    </p>
+                <div class="container-fluid d-flex flex-column my-4 p-3 shadow-sm bg-white">
+                    <div id="presentation" class="d-lg-flex justify-content-between align-items-center">
+                        <!-- presentation  -->
+                        <p class="px-2 px-md-5 py-3 fs-5">
+                        Autodidacte en <strong class="fw-bolder">HTML/CSS, PHP/MySQL, Linux</strong>, j'ai ensuite acquis les bases et les principes de la programmation orientée objet lors d'une formation sur le <span class="fw-bolder">langage Java</span>. <br> 
+                        Mon cursus actuel approfondit ces <a class="text-dark fs-4" href="#langages">compétences</a> et en développe de nouvelles. Notamment <strong class="fw-bolder">concevoir</strong> une application, <strong class="fw-bolder">gérer un projet</strong> informatique et <strong class="fw-bolder">développer</strong> une application multi-supports avec les technologies du Web.
+                        </p>
+                        <!-- stage  -->
+                        <div id="stage" class="d-flex flex-column px-3 px-md-5 py-4 ms-lg-4 mb-5 shadow-lg col-lg-5 float-md-end" >
+                            <p class="fs-4 ">Aujourd'hui, je recherche un <span class="fw-bolder">stage de 2 mois</span> (non rémunéré) qui consolidera mes connaissances et les mettra en pratique dans le quotidien d'une entreprise.</p>
+                            <a class="text-decoration-none fw-bold d-flex justify-content-center" href="#contact">Contactez-moi</a>
+                        </div>
+                    </div>
+                    <!-- SOFT SKILLS  -->
+                    <div id="softSkills" class="d-sm-flex justify-content-around">
+                        <div id="creatif" class="text-center p-2 col-md-4 mb-5 mb-sm-0">
+                            <h1 class="h3 fw-bold">Créatif</h1>
+                            <div class="p-2">
+                                <p class="fs-5">Je fais aussi des vêtements !</p>
+                                <a href="https://www.instagram.com/industrie.de.la.poche/" target="_blank"><img class="p-3 shadow rounded-circle" style="width: 10vh;" src="./assets/logos/social/instagram_icon_153513.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div id="adapt" class="text-center p-2 col-md-4 mb-5 mb-sm-0">
+                            <h1 class="h3 fw-bold">Adaptable</h1>
+                            <div class="p-2 d-flex flex-column justify-content-between align-items-center h-75">
+                                <p class="fs-5">Mes expériences le montrent.</p>
+                                <a id="infoAdapt" class="text-decoration-none text-dark shadow p-3 fs-5 bg-white" href="#parcours">Jetez-y un oeil !</a>
+                            </div>
+                        </div>
+                        <div id="rigueur" class="text-center p-2 col-md-4">
+                            <h1 class="h3 fw-bold">Rigoureux</h1>
+                            <div class="p-2">
+                                <p class="fs-5">Le code source du site est ici :</p>
+                                <a href=""><img class="p-3 shadow rounded-circle bg-white" style="width: 10vh;" src="./assets/logos/social/GITHUB_icon-icons.com_65505.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-                <!-- SOFT SKILLS  -->
-                <div id="softSkills" class="d-sm-flex justify-content-around">
-                    <div id="creatif" class="text-center p-3 col-md-3">
-                        <h1 class="h3 fw-bold" style="cursor: pointer;">Créatif <span class="fs-3 text-dark">&#9660;</span></h1>
-                        <div class="hide py-2">
-                            <p class="fs-4">Je fais aussi des vêtements !</p>
-                            <a href="https://www.instagram.com/industrie.de.la.poche/" target="_blank"><img class="h-100 p-2 border border-2 border-dark bg-white" src="./assets/logos/social/instagram_icon_153513.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div id="adapt" class="text-center p-3 col-md-3">
-                        <h1 class="h3 fw-bold" style="cursor: pointer;">Adaptable <span class="fs-3 text-dark">&#9660;</span></h1>
-                        <div class="hide py-2">
-                            <p class="fs-4">Mes expériences le montrent.</p>
-                            <a id="infoAdapt" class="text-decoration-none border border-2 border-dark p-2 m-0 bg-white" href="#parcours">Jetez-y un oeil !</a>
-                        </div>
-                    </div>
-                    <div id="rigueur" class="text-center p-3 col-md-3">
-                        <h1 class="h3 fw-bold" style="cursor: pointer;">Rigoureux <span class="fs-3 text-dark">&#9660;</span></h1>
-                        <div class="hide py-2">
-                            <p class="fs-4">Le code source du site est ici :</p>
-                            <a href=""><img class="h-100 p-2 m-0 border border-2 border-dark bg-white" src="./assets/logos/social/GITHUB_icon-icons.com_65505.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div> 
             </div>
             <!-- COMPETENCES LANGAGES   -->
             <div id="langages" class="container-fluid mt-5 py-2 p-0">
-                <h1 class="mb-5">Compétences *</h1>
-                <div class="d-flex justify-content-around flex-wrap">
+                <h1 >Compétences *</h1>
+                <div class="d-flex justify-content-around flex-wrap bg-white shadow-sm my-4 p-3">
                     <div class="langage m-2 col-5 col-md-5 col-lg-4 col-xl-3 d-flex flex-column align-items-center">
                         <img src="./assets/logos/lang/html_icon_153514.svg" alt="">
                         <div >
@@ -125,7 +128,7 @@
                         <p class="fs-5">JAVA</p>
                     </div>
                 </div>
-                <p id="notesCompetences" class="py-3">* Le barême de notation (<span class="text-success">débutant</span>, <span class="text-primary">intermédiaire</span>, <span class="text-danger">confirmé</span> et <span class="text-dark">expert</span>) s'appuie sur <a class="text-dark" href="https://www.wikiwand.com/en/Outliers_(book)#/Background" target="_blank">la théorie des 10 000 heures</a>. Associée à la notion de <a class="text-dark" href="https://www.wikiwand.com/en/Practice_(learning_method)" target="_blank">pratique délibérée</a>, le nombre d'heures consacrées à un langage permet de se faire une idée plus juste de sa maîtrise.</p>
+                <p id="notesCompetences" class="py-3">* Le barême de notation (<span class="text-success">débutant</span>, <span class="text-primary">intermédiaire</span>, <span class="text-danger">confirmé</span> et <span class="text-dark">expert</span>) s'appuie sur <a class="text-dark" href="https://www.wikiwand.com/en/Outliers_(book)#/Background" target="_blank">la théorie des 10 000 heures</a>. Associé à une <a class="text-dark" href="https://www.wikiwand.com/en/Practice_(learning_method)" target="_blank">pratique délibérée</a>, le nombre d'heures consacrées à un langage permet de se faire une idée plus juste de sa maîtrise.</p>
             </div>
         </div>
 
@@ -137,7 +140,7 @@
                 <!-- <img class="bg- img-fluid" style="width: 20%;" src="./assets/logos/ort.svg" alt=""> -->
                 <div class="col-12 d-flex flex-column align-items-center bg-">
                     <h1 class="col-12 mb-5 bg-">Actuellement</h1>
-                    <p class="text-center p-4 col-md-6 bg-white shadow-sm" style="font-size: 1.4em;"><span class="fw-bold">En formation</span> "Concepteur Développeur d'Applications" à l'ORT de Toulouse.</p>
+                    <p class="text-center p-2 p-md-4 col-md-6 bg-white shadow-sm" style="font-size: 1.4em;"><span class="fw-bold">En formation</span> "Concepteur Développeur d'Applications" à l'ORT de Toulouse.</p>
                     <!-- DETAILS FORMATION  -->
                     <div id="detailsFormation" class="col-12 text-center pb-5">
                         <p style="cursor: pointer;">Plus de détails &#9660;</p>
@@ -166,27 +169,32 @@
                 </div>
             </div>
             <!-- DIPLOMES ET FORMATIONS  -->
-            <div id="formations" class="d-flex flex-column align-items-center pt-4 mb-3 ">
-                <h1 class="col-12 mb-4 bg-" style="cursor: pointer;">Diplômes / Formations <span class="fs-1 text-dark">&#9660;</span></h1>
+            <div id="formations" class="d-flex flex-column align-items-center mt-5 py-2 ">
+                <h1 class="col-12 mb-4" style="cursor: pointer;">Diplômes / Formations</h1>
                 <!-- LISTE FORMATIONS -->
-                <div class="hide col-12">
+                <div class="container-fluid my-md-4 p-3">
                     <div class="d-md-flex justify-content-between">
                         <!-- formations  -->
-                        <div class="col-md-6 p-5 text-white" style="background-color: #939597;">
-                            <div class="my-4">
-                                <p class="my-2 fs-5 text-md-end"><span class="fst-italic">Novembre - Décembre 2020</span> <br>
-                                <span class="fw-bold fs-4">Formation "Langage de programmation Java"</span> <br>
-                                <span>ORT - Toulouse</span></p>
+                        <div class="col-md-6 p-3 p-md-5 text-white d-flex flex-column justify-content-between align-items-end" style="background-color: #939597;">
+                            <div>
+                                <div class="my-md-4">
+                                    <p class="my-2 fs-5 text-md-end"><span class="fst-italic">Novembre - Décembre 2020</span> <br>
+                                    <span class="fw-bold fs-4">Formation "Langage de programmation Java"</span> <br>
+                                    <span>ORT - Toulouse</span></p>
+                                </div>
+                                <div class="my-4">
+                                    <p class="my-2 fs-5 text-md-end"><span class="fst-italic">depuis Mars 2020</span> <br>
+                                    <span class="fw-bold fs-4">MOOCs HTML/CSS; PHP/MySQL; Linux; JavaScript</span> <br>
+                                    <span>Open Classroom / w3schools</span></p>
+                                </div>
                             </div>
-                            <div class="my-4">
-                                <p class="my-2 fs-5 text-md-end"><span class="fst-italic">depuis Mars 2020</span> <br>
-                                <span class="fw-bold fs-4">MOOCs HTML/CSS; PHP/MySQL; Linux; JavaScript</span> <br>
-                                <span>Open Classroom / w3schools</span></p>
+                            <div class="col-12 d-flex justify-content-end">
+                                <a id="plusBtn" class="fs-3 text-decoration-none fw-bold d-flex justify-content-center" href="#profil">En savoir plus</a>
                             </div>
                         </div>
                         <!-- diplômes  -->
-                        <div class="col-md-6 p-5" style="background-color: #1f4c8bff; color: white;">
-                            <div class="my-4">
+                        <div class="col-md-6 p-3 p-md-5" style="background-color: #1f4c8bff; color: white;">
+                            <div class="my-md-4">
                                 <p class="my-2 fs-5"><span class="fst-italic">Septembre 2015 - Juin 2016</span> <br>
                                 <span class="fw-bold fs-4">CAP Couturier-Tailleur</span> <br>
                                 <span>ID Coupe et Couture - Toulouse</span></p>
@@ -201,7 +209,7 @@
                                 <span class="fw-bold fs-4">Licence de Droit</span> <br>
                                 <span>UT 1 - Toulouse</span></p>
                             </div>
-                            <div class="my-4">
+                            <div class="my-md-4">
                                 <p class="my-2 fs-5"><span class="fst-italic">Juin 2007</span> <br>
                                 <span class="fw-bold fs-4">Baccalauréat Scientifique (SVT)</span> <br>
                                 <span>Lycée Berthelot - Toulouse</span></p>
@@ -212,146 +220,146 @@
             </div>
             <!-- XP PRO  -->
             <div id="xpPro" class="d-flex flex-column align-items-center py-4">
-                <h1 class="col-12 mb-3" style="cursor: pointer;">Expériences professionnelles <span class="fs-1 text-dark">&#9660;</span></h1>
+                <h1 class="col-12 mb-md-3" style="cursor: pointer;">Expériences professionnelles <span class="fs-1 text-dark">&#9660;</span></h1>
                 <!-- TIME LINE  -->
                 <section class="col-12 hide" >
-                    <div class="container py-5">
-                    <div class="main-timeline ">
-                        <!-- 2015-2020    -->
-                        <div class="timeline left">
-                        <div class="card border border-white bg-">
-                            <div class="card-body p-4">
-                                <h3 class="h2">2015 - 2020</h3>
-                                <div>
-                                    <p class="my-2 fs-5"><span class="fst-italic">Septembre 2015 - Août 2020</span> <br>
-                                    <span class="fw-bold fs-4">Assistant d'éducation</span> <br>
-                                    <span>Collège F. François Verdier - Léguevin</span></p>
-                                    <p>Surveillance des élèves, aide au devoirs, accueil du public</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- 2015  -->
-                        <div class="timeline right">
-                        <div class="card border border-white">
-                            <div class="card-body p-4">
-                                <h3 class="h2 ">2015</h3>
-                                <div class=" mb-2 ">
-                                    <p class="my-2 fs-5"><span class="fst-italic">Avril - Juin</span> <br>
-                                    <span class="fw-bold fs-4">Conseiller en fiscalité</span> <br>
-                                    <span>Association EDC - Toulouse</span></p>
-                                    <p>Écoute, conseil et aide informatique à la déclarationd'impôts</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- 2014  -->
-                        <div class="timeline left">
-                        <div class="card border border-white">
-                            <div class="card-body p-4">
-                                <h3 class="h2 ">2014</h3>
-                                <div class=" mb-2">
-                                    <div class="my-4 " style="border-bottom: 1px dotted black;">
-                                        <p class="fs-5"><span class="fst-italic">Janvier - Juin</span> <br>
-                                        <span class="fw-bold fs-4">Inventaires</span> <br>
-                                        <span>IVALIS - Toulouse</span></p>
-                                        <p>Inventaires de divers commerces</p>
-                                    </div>
-                                    <div class="my-4 ">
-                                        <p class="fs-5"><span class="fst-italic">Septembre - Décembre</span> <br>
-                                        <span class="fw-bold fs-4">Télé-enquêteur</span> <br>
-                                        <span>Call Marketing - Toulouse</span></p>
-                                        <p>Démarchages et études téléphoniques par ordinateur</p>
+                    <div class="container py-3 py-md-5">
+                        <div class="main-timeline ">
+                            <!-- 2015-2020    -->
+                            <div class="timeline left">
+                                <div class="card border border-white bg-">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2">2015 - 2020</h3>
+                                        <div>
+                                            <p class="my-2 fs-5"><span class="fst-italic">Septembre 2015 - Août 2020</span> <br>
+                                            <span class="fw-bold fs-4">Assistant d'éducation</span> <br>
+                                            <span>Collège F. François Verdier - Léguevin</span></p>
+                                            <p>Surveillance des élèves, aide au devoirs, accueil du public</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        </div>
-                        <!-- 2013  -->
-                        <div class="timeline right">
-                        <div class="card border border-white">
-                            <div class="card-body p-4">
-                                <h3 class="h2 ">2013</h3>
-                                <div>
-                                    <div class="my-4 " style="border-bottom: 1px dotted black;">
-                                        <p class="my-2 fs-5"><span class="fst-italic">Février - Mars</span> <br>
-                                        <span class="fw-bold fs-4">Stage (5 semaines)</span> <br>
-                                        <span>Laboratoire Olivot-Mariotti - Agen</span></p>
-                                        <p>Calibrage d'automates</p>
-                                    </div>
-                                    <div class="my-4 ">
-                                        <p class="my-2 fs-5"><span class="fst-italic">Octobre - Décembre</span> <br>
-                                        <span class="fw-bold fs-4">Inventaires</span> <br>
-                                        <span>IVALIS - Toulouse</span></p>
-                                        <p>Inventaires de divers commerces</p>
+                            <!-- 2015  -->
+                            <div class="timeline right">
+                                <div class="card border border-white">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2 ">2015</h3>
+                                        <div class=" mb-2 ">
+                                            <p class="my-2 fs-5"><span class="fst-italic">Avril - Juin</span> <br>
+                                            <span class="fw-bold fs-4">Conseiller en fiscalité</span> <br>
+                                            <span>Association EDC - Toulouse</span></p>
+                                            <p>Écoute, conseil et aide informatique à la déclarationd'impôts</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        </div>
-                        <!-- 2012  -->
-                        <div class="timeline left">
-                        <div class="card border border-white">
-                            <div class="card-body p-4">
-                                <h3 class="h2 ">2012</h3>
-                                <div class="my-4 ">
-                                    <p class="my-2 fs-5"><span class="fst-italic">Mai - Juin</span> <br>
-                                    <span class="fw-bold fs-4">Stage (7 semaines)</span> <br>
-                                    <span>Laboratoire d'anatomo-pathologie - CHU Rangueil (Toulouse)</span></p>
-                                    <p>Rédaction et mises à jour des protocoles d'analyses</p>
+                            <!-- 2014  -->
+                            <div class="timeline left">
+                                <div class="card border border-white">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2 ">2014</h3>
+                                        <div class=" mb-2">
+                                            <div class="my-4 " style="border-bottom: 1px dotted black;">
+                                                <p class="fs-5"><span class="fst-italic">Septembre - Décembre</span> <br>
+                                                <span class="fw-bold fs-4">Télé-enquêteur</span> <br>
+                                                <span>Call Marketing - Toulouse</span></p>
+                                                <p>Démarchages et études téléphoniques par ordinateur</p>
+                                            </div>
+                                            <div class="my-4 ">
+                                                <p class="fs-5"><span class="fst-italic">Janvier - Juin</span> <br>
+                                                <span class="fw-bold fs-4">Inventaires</span> <br>
+                                                <span>IVALIS - Toulouse</span></p>
+                                                <p>Inventaires de divers commerces</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2013  -->
+                            <div class="timeline right">
+                                <div class="card border border-white">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2 ">2013</h3>
+                                        <div>
+                                            <div class="my-4 " style="border-bottom: 1px dotted black;">
+                                                <p class="my-2 fs-5"><span class="fst-italic">Octobre - Décembre</span> <br>
+                                                <span class="fw-bold fs-4">Inventaires</span> <br>
+                                                <span>IVALIS - Toulouse</span></p>
+                                                <p>Inventaires de divers commerces</p>
+                                            </div>
+                                            <div class="my-4 ">
+                                                <p class="my-2 fs-5"><span class="fst-italic">Février - Mars</span> <br>
+                                                <span class="fw-bold fs-4">Stage (5 semaines)</span> <br>
+                                                <span>Laboratoire Olivot-Mariotti - Agen</span></p>
+                                                <p>Calibrage d'automates</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2012  -->
+                            <div class="timeline left">
+                                <div class="card border border-white">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2 ">2012</h3>
+                                        <div class="my-4 ">
+                                            <p class="my-2 fs-5"><span class="fst-italic">Mai - Juin</span> <br>
+                                            <span class="fw-bold fs-4">Stage (7 semaines)</span> <br>
+                                            <span>Laboratoire d'anatomo-pathologie - CHU Rangueil (Toulouse)</span></p>
+                                            <p>Rédaction et mises à jour des protocoles d'analyses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2010-2011  -->
+                            <div class="timeline right">
+                                <div class="card border border-white">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2 ">2010 - 2011</h3>
+                                        <div class="my-4 ">
+                                            <p class="my-2 fs-5"><span class="fst-italic">Octobre 2010 - Mars 2011</span> <br>
+                                            <span class="fw-bold fs-4">Télé-enquêteur</span> <br>
+                                            <span>Call Marketing - Toulouse</span></p>
+                                            <p>Démarchages et études téléphoniques par ordinateur</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2009  -->
+                            <div class="timeline left">
+                                <div class="card border border-white">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2 ">2009</h3>
+                                        <div class="my-4 " style="border-bottom: 1px dotted black;">
+                                            <p class="my-2 fs-5"><span class="fst-italic">Septembre - Octobre</span> <br>
+                                            <span class="fw-bold fs-4">Assistant d'éducation</span> <br>
+                                            <span>Collège J. Prévert - St Orens</span></p>
+                                            <p>Surveillance des élèves, aide au devoirs, accueil du public</p>
+                                        </div>
+                                        <div class="my-4 ">
+                                            <p class="my-2 fs-5"><span class="fst-italic">Janvier - Mars</span> <br>
+                                            <span class="fw-bold fs-4">Équipier McDonald's</span> <br>
+                                            <span>Montaudran - Toulouse</span></p>
+                                            <p>Équipier polyvalent</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2008  -->
+                            <div class="timeline right">
+                                <div class="card border border-white">
+                                    <div class="card-body p-4">
+                                        <h3 class="h2 ">2008</h3>
+                                        <div class="my-4 ">
+                                            <p class="my-2 fs-5"><span class="fst-italic">Juillet</span> <br>
+                                            <span class="fw-bold fs-4">Employé au service administratif</span> <br>
+                                            <span>Groupe Malakoff - St Quentin en Yvelines</span></p>
+                                            <p>Gestion informatique des archives, saisie de dossiers</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        <!-- 2010-2011  -->
-                        <div class="timeline right">
-                        <div class="card border border-white">
-                            <div class="card-body p-4">
-                                <h3 class="h2 ">2010 - 2011</h3>
-                                <div class="my-4 ">
-                                    <p class="my-2 fs-5"><span class="fst-italic">Octobre 2010 - Mars 2011</span> <br>
-                                    <span class="fw-bold fs-4">Télé-enquêteur</span> <br>
-                                    <span>Call Marketing - Toulouse</span></p>
-                                    <p>Démarchages et études téléphoniques par ordinateur</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- 2009  -->
-                        <div class="timeline left">
-                            <div class="card border border-white">
-                            <div class="card-body p-4">
-                                <h3 class="h2 ">2009</h3>
-                                <div class="my-4 " style="border-bottom: 1px dotted black;">
-                                    <p class="my-2 fs-5"><span class="fst-italic">Janvier - Mars</span> <br>
-                                    <span class="fw-bold fs-4">Équipier McDonald's</span> <br>
-                                    <span>Montaudran - Toulouse</span></p>
-                                    <p>Équipier polyvalent</p>
-                                </div>
-                                <div class="my-4 ">
-                                    <p class="my-2 fs-5"><span class="fst-italic">Septembre - Octobre</span> <br>
-                                    <span class="fw-bold fs-4">Assistant d'éducation</span> <br>
-                                    <span>Collège J. Prévert - St Orens</span></p>
-                                    <p>Surveillance des élèves, aide au devoirs, accueil du public</p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <!-- 2008  -->
-                        <div class="timeline right">
-                            <div class="card border border-white">
-                            <div class="card-body p-4">
-                                <h3 class="h2 ">2008</h3>
-                                <div class="my-4 ">
-                                    <p class="my-2 fs-5"><span class="fst-italic">Juillet</span> <br>
-                                    <span class="fw-bold fs-4">Employé au service administratif</span> <br>
-                                    <span>Groupe Malakoff - St Quentin en Yvelines</span></p>
-                                    <p>Gestion informatique des archives, saisie de dossiers</p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </section>
             </div>
@@ -361,9 +369,12 @@
 
         <div id="contact" class="pageContent ">
             <h1 class="pb-4">Écrivez-moi</h1>
-            <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex flex-column align-items-center justify-content-center bg-white shadow-sm p-3">
+                <div class="col-10 my-4">
+                    <p class="fs-4">Mon sérieux, ma curiosité et mon enthousiasme éveillent votre intérêt ?</p>
+                </div>
                 <!-- FORM  -->
-                <div class="form-container col-md-10 pb-5">
+                <div class="form-container col-md-10">
                     <form id="reused_form">
                         <!-- NAME & EMAIL  -->
                         <div class="d-flex justify-content-between flex-wrap">
@@ -383,9 +394,22 @@
                             <textarea id="message" class="validate form-control" name="message" style="height: 200px" placeholder="Ici votre message..." ></textarea>
                             <label for="message">Votre message</label>
                         </div>
-                        <!-- VALIDATION BTN  -->
-                        <div class="d-flex justify-content-end pt-3">
-                            <button class="form-button btn btn-lg shadow" type="submit" style="border-radius: 0%; background-color: #1f4c8bff; color: white;">Envoyer</button>
+                        <!-- VALIDATION BTN + TEL & LINKEDIN -->
+                        <div class="d-flex justify-content-between align-items-baseline mt-5">
+                            <!-- TEL & LINKEDIN -->
+                            <div>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="me-2">
+                                        <a href="https://www.linkedin.com/in/thomas-bribet" target="_blank"><img class="p-2 shadow" style="width: 55px;" src="./assets/logos/social/LINKEDIN_icon-icons.com_65488.svg" alt="linkedin"></a>
+                                    </p>
+                                    <p class="mx-2">
+                                        <a href="+33679277327"><img class="p-2 shadow rounded-circle" style="width: 55px;" src="./assets/logos/social/phone_icon_153548.svg" alt=""></a> 
+                                    </p>
+                                    <p class="fs-5 mx-2 d-none d-md-block"><a class="text-decoration-none text-dark" href="+33679277327">+33 6 79 27 73 27</a></p>
+                                </div>
+                            </div>
+                            <!-- BUTTON  -->
+                            <button class="form-button btn btn-lg" type="submit" style="border-radius: 0%; background-color: #1f4c8bff; color: white;">Envoyer</button>
                         </div>
                     </form>
                 
@@ -396,30 +420,14 @@
                         <h4>Message envoyé !</h4>
                     </div>
                 </div>
-                <!-- TEL  -->
-                <div class="py-4 col-12 col-sm-8 col-lg-7">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <p class="fs-5 mx-2"><a class="text-decoration-none text-dark" href="+33679277327">+33 6 79 27 73 27</a></p>
-                        <p class="mx-2">
-                            <a href="+33679277327"><img class="h-100 p-2 m-0 border border-2 border-dark rounded-circle" style="width: 50px;" src="./assets/logos/social/phone_icon_153548.svg" alt=""></a> 
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <!-- </div> -->
     </main>
 <!-- ___________________________________________________________________________________________________________________________________  -->
 
-    <footer class="container-fluid
-                   position-fixed
-                   pb-2 pe-sm-5
-                   bottom-0
-                   d-flex justify-content-end align-items-center
-                   ">
-        <!-- <a class="mx-4" href=""><img src="./assets/logos/social/GITHUB_icon-icons.com_65505.svg" alt=""></a> -->
-        <a class="p-2 m-0 me-lg-5 border border-2 border-dark bg-white" href="https://www.linkedin.com/in/thomas-bribet" target="_blank"><img src="./assets/logos/social/LINKEDIN_icon-icons.com_65488.svg" alt=""></a>
+    <footer class="container-fluid d-flex justify-content-center align-items-center">
+        <p class="fs-5">&copy; Thomas BRIBET, <span id="copyDate"></span></p>
     </footer>
 
     <!-- BOOTSTRAP JS  -->

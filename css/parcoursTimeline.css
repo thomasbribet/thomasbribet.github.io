@@ -40,6 +40,7 @@
   .left {
     padding: 0px 40px 20px 0px;
     left: 0;
+    text-align: right;
   }
   
   /* Place the container to the right */
@@ -106,6 +107,10 @@
   
     .left::before {
       right: auto;
+    }
+
+    .left {
+      text-align: left;
     }
   
     /* Make all right containers behave like the left ones */

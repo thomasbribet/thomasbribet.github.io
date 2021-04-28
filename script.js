@@ -1,25 +1,32 @@
+// FOOTER COPYRIGHT DATE
+
+var copyDate = function() {
+    var currentYear = new Date();
+    document.getElementById('copyDate').innerHTML = currentYear.getFullYear();
+}
+copyDate();
+
+////////////////////////////////////////////////////////////////////////
+
 // DROPDOWN MENU (toutes pages)
 
-var dropdown = function(btnMenu, hiddenMenu) {
+var dropdown = function(btnMenu, hiddenMenu, classToToggle) {
     var btn = document.querySelector(btnMenu);
     var menu = document.querySelector(hiddenMenu);
     btn.addEventListener('click', () => {
-        menu.classList.toggle('visible');
+        menu.classList.toggle(classToToggle);
     });
+    menu.addEventListener('click', () => {
+        menu.classList.toggle(classToToggle);
+    })
 };
 
 // navbar 
-dropdown('#dropdownMenuLogo', '#dropdownMenu div');
-
-// profil 
-dropdown('#creatif', '#creatif div');
-dropdown('#adapt', '#adapt div');
-dropdown('#rigueur', '#rigueur div');
+dropdown('#dropdownMenuLogo', '#dropdownMenu div', 'visible');
 
 // parcours
-dropdown('#detailsFormation', '#detailsFormation div');
-dropdown('#formations', '#formations div');
-dropdown('#xpPro', '#xpPro section');
+// dropdown('#detailsFormation', '#detailsFormation div');
+dropdown('#xpPro', '#xpPro section', 'visible');
 
 ////////////////////////////////////////////////////////////////////////
 
