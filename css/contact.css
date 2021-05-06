@@ -1,8 +1,24 @@
-/* FORM  */
-.form-control {
-    border-radius: 0;
-    border: solid 2px black;
+#status.success {
+    background-color: rgb(18, 158, 18);
+    color: white;
+    animation: status 3s ease forwards;
 }
-.form-control :focus-within {
-    outline: 1em solid black;
+#status.error {
+    background-color: rgb(247, 23, 23);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }

@@ -2,50 +2,52 @@
     <h1 class="pb-4">Écrivez-moi</h1>
     <div class="d-flex flex-column align-items-center justify-content-center bg-white shadow-sm p-3">
         <div class="col-10 my-4">
-            <p class="fs-4">Mon <a class="text-dark" href="#profil">profil</a> et mon enthousiasme éveillent votre intérêt ?</p>
+            <p class="fs-4">Mon <a class="text-dark" href="#profil">profil</a> et mon enthousiasme éveillent votre
+                intérêt ?</p>
         </div>
         <!-- FORM  -->
         <div class="form-container col-md-10">
-            <form id="reused_form" action="https://formspree.io/f/xleagvgw" method="POST">
+            <form action="https://formspree.io/f/xleagvgw" method="POST" id="my-form">
                 <!-- NAME & EMAIL  -->
                 <div class="d-flex justify-content-between flex-wrap">
                     <!-- NAME  -->
                     <div class="col-12 col-lg-4 form-floating mb-3">
-                        <input id="name" class="validate form-control" type="text" name="name" placeholder="Nom" required>
+                        <input id="name" class="validate form-control" type="text" name="name" placeholder="Nom"
+                            required>
                         <label for="name">Nom</label>
                     </div>
                     <!-- EMAIL  -->
                     <div class="col-12 col-lg-7 form-floating mb-3">
-                        <input id="email" class="validate form-control" type="email" name="email" placeholder="E-mail" required>
+                        <input id="email" class="validate form-control" type="email" name="email" placeholder="E-mail"
+                            required>
                         <label for="email">Adresse email</label>
                     </div>
                 </div>
                 <!-- MESSAGE  -->
                 <div class="form-floating">
-                    <textarea id="message" class="validate form-control" name="message" style="height: 200px" placeholder="Ici votre message..." ></textarea>
+                    <textarea id="message" class="validate form-control" name="message" style="height: 200px"
+                        placeholder="Ici votre message..."></textarea>
                     <label for="message">Votre message</label>
                 </div>
                 <!-- VALIDATION BTN + TEL & LINKEDIN -->
                 <div class="d-flex justify-content-between align-items-baseline mt-5">
-                    <!-- TEL & LINKEDIN -->
+                    <!--LINKEDIN -->
                     <div>
                         <div class="d-flex justify-content-start align-items-center">
                             <p class="me-2">
-                                <a href="https://www.linkedin.com/in/thomas-bribet" target="_blank"><img class="p-2 shadow" style="width: 55px;" src="./assets/logos/social/LINKEDIN_icon-icons.com_65488.svg" alt="linkedin"></a>
+                                <a href="https://www.linkedin.com/in/thomas-bribet" target="_blank"><img
+                                        class="p-2 shadow" style="width: 55px;"
+                                        src="./assets/logos/social/LINKEDIN_icon-icons.com_65488.svg"
+                                        alt="linkedin"></a>
                             </p>
                         </div>
                     </div>
                     <!-- BUTTON  -->
-                    <button class="form-button btn btn-lg" type="submit" style="border-radius: 0%; background-color: #1f4c8bff; color: white;">Envoyer</button>
+                    <button class="form-button btn btn-lg" type="submit"
+                    style="border-radius: 0%; background-color: #1f4c8bff; color: white;">Envoyer</button>
                 </div>
             </form>
-<!--         
-            <div id="error_message" style="width:100%; height:100%; display:none; ">
-                <h4>Une erreur s'est produite, veuillez rééssayer</h4> 
-            </div>
-            <div id="success_message" style="width:100%; height:100%; display:none; ">
-                <h4>Message envoyé !</h4>
-            </div> -->
         </div>
     </div>
+    <div id="status" class="text-center fs-5 btn-lg" style="border-radius: 0%;"></div>
 </div>
