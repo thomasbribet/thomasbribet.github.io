@@ -29,11 +29,6 @@ h2, h3, h4 {
     font-size: 1.5em;
 }
 
-/* DISPLAY PAGE CONTENT  */
-#activeContent {
-    display: block;
-}
-
 /* NAV CLASSIC MENU ______________________________________________ */
 header a {
     font-family: "Montserrat-Medium";
@@ -87,7 +82,7 @@ header img {
     background-color: #1f4c8bff;
 }
 
-/* bouton "en savoir plus"  */
+/* bouton "en savoir plus", formations */
 #plusBtn {
     background-color: white;
     color: #939597;
@@ -101,7 +96,7 @@ header img {
 }
 #plusBtn:hover {
     background-color: #939597;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
 }
 

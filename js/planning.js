@@ -1,4 +1,4 @@
-var planning = [
+export default planning = [
     {
       "Subject": "Accueil/Decouverte de la formation",
       "Start Date": "2/22/2021",
@@ -2079,5 +2079,3 @@ var planning = [
       "Private": true
     }
   ]
-
-  console.log(planning[100]["Start Time"].substring(0,2));

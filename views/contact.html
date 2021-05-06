@@ -1,42 +1,55 @@
-<div class="d-flex flex-column align-items-center">
-    <!-- FORM  -->
-    <div id="form" class="container pb-5">
-        <h1 class="h1 pb-4">Écrivez-moi</h1>
-        <!-- NOM & PRENOM  -->
-        <div class="d-flex justify-content-between">
-            <div class="col-5 form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInputNom" placeholder="name@example.com">
-                <label for="floatingInputNom">Nom</label>
+<div id="contact" class="pageContent ">
+    <h1 class="pb-4">Écrivez-moi</h1>
+    <div class="d-flex flex-column align-items-center justify-content-center bg-white shadow-sm p-3">
+        <div class="col-10 my-4">
+            <p class="fs-4">Mon <a class="text-dark" href="#profil">profil</a> et mon enthousiasme éveillent votre intérêt ?</p>
+        </div>
+        <!-- FORM  -->
+        <div class="form-container col-md-10">
+            <form id="reused_form">
+                <!-- NAME & EMAIL  -->
+                <div class="d-flex justify-content-between flex-wrap">
+                    <!-- NAME  -->
+                    <div class="col-12 col-lg-4 form-floating mb-3">
+                        <input id="name" class="validate form-control" type="text" name="name" placeholder="Nom" required>
+                        <label for="name">Nom</label>
+                    </div>
+                    <!-- EMAIL  -->
+                    <div class="col-12 col-lg-7 form-floating mb-3">
+                        <input id="email" class="validate form-control" type="email" name="email" placeholder="E-mail" required>
+                        <label for="email">Adresse email</label>
+                    </div>
+                </div>
+                <!-- MESSAGE  -->
+                <div class="form-floating">
+                    <textarea id="message" class="validate form-control" name="message" style="height: 200px" placeholder="Ici votre message..." ></textarea>
+                    <label for="message">Votre message</label>
+                </div>
+                <!-- VALIDATION BTN + TEL & LINKEDIN -->
+                <div class="d-flex justify-content-between align-items-baseline mt-5">
+                    <!-- TEL & LINKEDIN -->
+                    <div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <p class="me-2">
+                                <a href="https://www.linkedin.com/in/thomas-bribet" target="_blank"><img class="p-2 shadow" style="width: 55px;" src="./assets/logos/social/LINKEDIN_icon-icons.com_65488.svg" alt="linkedin"></a>
+                            </p>
+                            <p class="mx-2">
+                                <a href="+33679277327"><img class="p-2 shadow rounded-circle" style="width: 55px;" src="./assets/logos/social/phone_icon_153548.svg" alt=""></a> 
+                            </p>
+                            <p class="fs-5 mx-2 d-none d-md-block"><a class="text-decoration-none text-dark" href="+33679277327">+33 6 79 27 73 27</a></p>
+                        </div>
+                    </div>
+                    <!-- BUTTON  -->
+                    <button class="form-button btn btn-lg" type="submit" style="border-radius: 0%; background-color: #1f4c8bff; color: white;">Envoyer</button>
+                </div>
+            </form>
+        
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+                <h4>Une erreur s'est produite, veuillez rééssayer</h4> 
             </div>
-            <div class="col-5 form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInputPrenom" placeholder="name@example.com">
-                <label for="floatingInputPrenom">Prenom</label>
+            <div id="success_message" style="width:100%; height:100%; display:none; ">
+                <h4>Message envoyé !</h4>
             </div>
-        </div>
-        <!-- EMAIL  -->
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInputMail" placeholder="name@example.com">
-            <label for="floatingInputMail">Adresse email</label>
-        </div>
-        <!-- MESSAGE  -->
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
-            <label for="floatingTextarea2">Votre message</label>
-        </div>
-        <!-- VALIDATION BTN  -->
-        <div class="d-flex justify-content-end pt-3 ">
-            <button class="btn btn-lg btn-outline-dark border-2" style="border-radius: 0%;">Envoyer</button>
         </div>
     </div>
-    <!-- MAIL & TEL  -->
-    <div class="py-4 col-12 col-sm-8 col-lg-7">
-        <!-- TEL  -->
-        <div class="d-flex justify-content-center align-items-center">
-            <p class="fs-5 mx-2"><a class="text-decoration-none text-dark" href="+33679277327">+33 6 79 27 73 27</a></p>
-            <p class="mx-2">
-                <a href="+33679277327"><img class="h-100 p-2 m-0 border border-2 border-dark bg-white rounded-circle" style="width: 50px;" src="./assets/logos/social/phone_icon_153548.svg" alt=""></a> 
-            </p>
-        </div>
-    </div>
-    <!-- <div class="col-5 mt-3 border-top border-2 border-dark"></div> separation line -->
 </div>

@@ -1,53 +1,67 @@
-<div id="#profil" >
+<div id="profil" class="pageContent">
     <!-- PRESENTATION  -->
     <div>
-        <div id="presentation" class="container pt-2">
-            <h1 class="h1">Présentation</h1>
-            <p class="pt-3 mx-md-5 fs-5">Autodidacte en <strong class="fw-bolder">HTML/CSS, PHP/MySQL, Linux</strong>, j'ai ensuite acquis les bases et les principes de la programmation orientée objet lors d'une formation sur le <span class="fw-bolder">langage Java</span>. <br> 
-            Mon cursus actuel approfondit ces <a class="text-dark" href="#langages">compétences</a> et en développe de nouvelles. Notamment <strong class="fw-bolder">concevoir</strong> une application, <strong class="fw-bolder">gérer un projet</strong> informatique et <strong class="fw-bolder">développer</strong> une application multi-supports avec les technologies du Web.</p>
-            <p id="stage" class="fs-4 px-4 py-5 my-5 mx-md-5">Aujourd'hui, je recherche un stage de deux mois (non rémunéré) qui consolidera mes connaissances et les mettra en pratique dans le quotidien d'une entreprise. <br> <br>
-            <a class="text-white fw-bold" href="#contact">Contactez-moi</a>
-            </p>
+        <h1>Présentation</h1>
+        <div class="container-fluid d-flex flex-column my-4 p-3 shadow-sm bg-white">
+            <div id="presentation" class="d-lg-flex justify-content-between align-items-center">
+                <!-- presentation  -->
+                <p class="px-2 px-md-5 py-3 fs-5">
+                    Autodidacte en <strong class="fw-bolder">HTML/CSS, PHP/MySQL, Linux</strong>, j'ai ensuite acquis
+                    les bases et les principes de la programmation orientée objet lors d'une formation sur le <span
+                        class="fw-bolder">langage Java</span>. <br>
+                    Mon cursus actuel approfondit ces <a class="text-dark fs-4" href="#langages">compétences</a> et en
+                    développe de nouvelles. Notamment <strong class="fw-bolder">concevoir</strong> une application,
+                    <strong class="fw-bolder">gérer un projet</strong> informatique et <strong
+                        class="fw-bolder">développer</strong> une application multi-supports avec les technologies du
+                    Web.
+                </p>
+                <!-- stage  -->
+                <div id="stage"
+                    class="d-flex flex-column px-3 px-md-5 py-4 ms-lg-4 mb-5 shadow-lg col-lg-5 float-md-end">
+                    <p class="fs-4 ">Aujourd'hui, je recherche un <span class="fw-bolder">stage de 2 mois</span> (non
+                        rémunéré) qui consolidera mes connaissances et les mettra en pratique dans le quotidien d'une
+                        entreprise.</p>
+                    <a class="text-decoration-none fw-bold d-flex justify-content-center"
+                        href="#contact">Contactez-moi</a>
+                </div>
+            </div>
+            <!-- SOFT SKILLS  -->
+            <div id="softSkills" class="d-sm-flex justify-content-around">
+                <div id="creatif" class="text-center p-2 col-md-4 mb-5 mb-sm-0">
+                    <h1 class="h3 fw-bold">Créatif</h1>
+                    <div class="p-2">
+                        <p class="fs-5">Je fais aussi des vêtements !</p>
+                        <a href="https://www.instagram.com/industrie.de.la.poche/" target="_blank"><img
+                                class="p-3 shadow rounded-circle" style="width: 7vh;"
+                                src="./assets/logos/social/instagram_icon_153513.svg" alt=""></a>
+                    </div>
+                </div>
+                <div id="adapt" class="text-center p-2 col-md-4 mb-5 mb-sm-0">
+                    <h1 class="h3 fw-bold">Adaptable</h1>
+                    <div class="p-2 d-flex flex-column justify-content-between align-items-center h-75">
+                        <p class="fs-5">Mes expériences le montrent.</p>
+                        <a id="infoAdapt" class="text-decoration-none text-dark shadow p-3 fs-5 bg-white"
+                            href="#parcours">Jetez-y un oeil !</a>
+                    </div>
+                </div>
+                <div id="rigueur" class="text-center p-2 col-md-4">
+                    <h1 class="h3 fw-bold">Perfectible</h1>
+                    <div class="p-2">
+                        <p class="fs-5">Le code source du site est ici :</p>
+                        <a href=""><img class="p-3 shadow rounded-circle bg-white" style="width: 7vh;"
+                                src="./assets/logos/social/GITHUB_icon-icons.com_65505.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- SOFT SKILLS  -->
-        <div id="softSkills" class="d-sm-flex justify-content-around 
-                                py-5 my-5 border-top border-bottom border-dark border-1 ">
-            <div id="creatif" class="text-center pt-3 col-md-3">
-                <h2 class="h5">CRÉATIF &#9660;</h2>
-                <div class="hide
-                            pb-4 h-100
-                            ">
-                    <p class="px-1 fs-5">Je fais aussi des vêtements !</p>
-                    <a href="https://www.instagram.com/industrie.de.la.poche/" target="_blank"><img class="h-100 p-2 m-0 border border-2 border-dark bg-white" src="./assets/logos/social/instagram_icon_153513.svg" alt=""></a>
-                </div>
-            </div>
-            <div id="adapt" class="text-center pt-3 col-md-3">
-                <h2 class="h5">ADAPTABLE &#9660;</h2>
-                <div class="hide
-                            pb-4 h-100
-                            ">
-                    <p class="px-1 fs-5">Mes expériences le montrent.</p>
-                    <a id="infoAdapt" class="text-decoration-none border border-2 border-dark p-2 m-0 bg-white" href="#parcours">Jetez-y un oeil !</a>
-                </div>
-            </div>
-            <div id="rigueur" class="text-center pt-3 col-md-3">
-                <h2 class="h5">RIGOUREUX &#9660;</h2>
-                <div class="hide
-                            pb-4 h-100
-                            ">
-                    <p class="px-1 fs-5">Le code source du site est ici :</p>
-                    <a href=""><img class="h-100 p-2 m-0 border border-2 border-dark bg-white" src="./assets/logos/social/GITHUB_icon-icons.com_65505.svg" alt=""></a>
-                </div>
-            </div>
-        </div> 
     </div>
     <!-- COMPETENCES LANGAGES   -->
-    <div id="langages" class="container-fluid mt-5 pt-2 pb-2">
-        <h1 class="h1 mb-3">Compétences *</h1>
-        <div class="d-flex justify-content-around flex-wrap pt-2">
+    <div id="langages" class="container-fluid mt-5 py-2 p-0">
+        <h1>Compétences *</h1>
+        <div class="d-flex justify-content-around flex-wrap bg-white shadow-sm my-4 p-3">
             <div class="langage m-2 col-5 col-md-5 col-lg-4 col-xl-3 d-flex flex-column align-items-center">
                 <img src="./assets/logos/lang/html_icon_153514.svg" alt="">
-                <div >
+                <div>
                     <span id="html" class="badge rounded-pill"></span>
                 </div>
                 <p class="fs-5">HTML 5</p>
@@ -55,7 +69,7 @@
             <div class="langage m-2 col-5 col-md-5 col-lg-4 col-xl-3 d-flex flex-column align-items-center">
                 <img src="./assets/logos/lang/css_icon_153522.svg" alt="">
                 <div>
-                    <span id="css" class="badge rounded-pill">279h</span>
+                    <span id="css" class="badge rounded-pill"></span>
                 </div>
                 <p class="fs-5">CSS 3</p>
             </div>
@@ -83,11 +97,16 @@
             <div class="langage m-2 col-5 col-md-5 col-lg-4 col-xl-3 d-flex flex-column align-items-center">
                 <img src="./assets/logos/lang/brand_java_icon_158844.svg" alt="">
                 <div>
-                    <span id="java" class="badge rounded-pill bg-success">77 h</span> <!--77h en nov-dec 2020, pas de pratique depuis-->
+                    <span id="java" class="badge rounded-pill"></span>
+                    <!--77h en nov-dec 2020, pas de pratique depuis-->
                 </div>
                 <p class="fs-5">JAVA</p>
             </div>
         </div>
-        <p id="notesCompetences" class="pt-3">* Le barême de notation (<span class="text-success">débutant</span>, <span class="text-primary">intermédiaire</span>, <span class="text-danger">confirmé</span> et <span class="text-dark">expert</span>) s'appuie sur <a class="text-dark" href="https://www.wikiwand.com/en/Outliers_(book)#/Background" target="_blank">la théorie des 10 000 heures</a>. Associée à la notion de <a class="text-dark" href="https://www.wikiwand.com/en/Practice_(learning_method)" target="_blank">pratique délibérée</a>, le nombre d'heures consacrées à un langage permet de se faire une idée plus juste de sa maîtrise.</p>
+        <p id="notesCompetences" class="py-3">* La notation (<span class="text-success">débutant</span>, <span
+                class="text-primary">intermédiaire</span>, <span class="text-warning">à l'aise</span>, <span class="text-danger">confirmé</span> et <span
+                class="text-dark">expert</span>) prend en compte le nombre d'heures consacrées à chaque langage. <a class="text-dark" href="">En savoir plus</a>
     </div>
+
+
 </div>

@@ -16,11 +16,11 @@
     width: 100%;
     align-self: center;
     display: flex;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 #stage a:hover {
     background-color: #939597;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
 }
 
