@@ -1,15 +1,4 @@
-// DROPDOWN MENU (toutes pages)
-
-var dropdown = function (btnMenu, hiddenMenu, classToToggle) {
-  var btn = document.querySelector(btnMenu);
-  var menu = document.querySelector(hiddenMenu);
-  btn.addEventListener('click', () => {
-    menu.classList.toggle(classToToggle);
-  });
-  menu.addEventListener('click', () => {
-    menu.classList.toggle(classToToggle);
-  })
-};
+// DROPDOWN MENU
 
 dropdown('#detailsFormationBtn', '#detailsFormation', "d-none");
 dropdown('#xpPro', '#xpPro section', 'visible');
@@ -40,7 +29,6 @@ var detailsFormation = function (courseName, courseHtmlId) {
         // console.log(planning[i].Subject);
         // -------------------------------------------------- 
         if (planning[i].Subject === courseName) {
-          // console.log(planning[i].Subject);
           // durée totale (en heures) de la matière passée en parametre
           var duration = planning[i]["End Time"].substring(0, 2) - planning[i]["Start Time"].substring(0, 2);
           allDurations.push(duration);
