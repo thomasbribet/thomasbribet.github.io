@@ -1,3 +1,28 @@
+// DROPDOWN MENU (toutes pages)
+
+var dropdown = function (btnMenu, hiddenMenu, classToToggle) {
+  var btn = document.querySelector(btnMenu);
+  var menu = document.querySelector(hiddenMenu);
+  btn.addEventListener('click', () => {
+    menu.classList.toggle(classToToggle);
+  });
+  menu.addEventListener('click', () => {
+    menu.classList.toggle(classToToggle);
+  })
+};
+
+dropdown('#detailsFormationBtn', '#detailsFormation', "d-none");
+dropdown('#xpPro', '#xpPro section', 'visible');
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // PROGRESS BARS DETAILS FORMATION (page parcours)
 
 var detailsFormation = function (courseName, courseHtmlId) {
@@ -9,13 +34,14 @@ var detailsFormation = function (courseName, courseHtmlId) {
       var planning = data;
       var allDurations = []; // durée totale de chaque matière, en heures
       var untilNowDurations = []; // durée totale de chaque matière jusqu'à la date du jour
-
+      
       for (let i = 0; i < planning.length; i++) {
         // liste des cours ----------------------------------
-        console.log(planning[i].Subject);
+        // console.log(planning[i].Subject);
         // -------------------------------------------------- 
         if (planning[i].Subject === courseName) {
-          // durée totale (en heures) de la matière passée en paramètre
+          // console.log(planning[i].Subject);
+          // durée totale (en heures) de la matière passée en parametre
           var duration = planning[i]["End Time"].substring(0, 2) - planning[i]["Start Time"].substring(0, 2);
           allDurations.push(duration);
 
@@ -27,8 +53,7 @@ var detailsFormation = function (courseName, courseHtmlId) {
             untilNowDurations.push(duration);
           }
         }
-
-        // total d'heures pour la matière passée en paramètre
+        // total d'heures pour la matière passée en parametre
         var total = 0;
         for (let j = 0; j < allDurations.length; j++) {
           total += allDurations[j];
@@ -47,8 +72,11 @@ var detailsFormation = function (courseName, courseHtmlId) {
         var displayHours = document.querySelector(`#${courseHtmlId}`);
         displayHours.innerHTML = `${enCours}/${total}h`;
         var displayHoursInString = `width: ${percent.toString()}%;`;
-        displayHours.setAttribute("style", displayHoursInString);
+        displayHours.setAttribute("style", `${displayHoursInString} background-color: #939597;`);
+
       }
+
+      
     })
 }
 
@@ -63,6 +91,15 @@ detailsFormation("Développement Web", "devWeb");
 detailsFormation("BDD Administration", "bddAdm");
 detailsFormation("BDD Requêtes", "bddReq");
 detailsFormation("Architecture REST", "archiRest");
+detailsFormation("GIT", "git");
+detailsFormation("TEST et bonnes pratiques", "tests");
+detailsFormation("NODE JS", "nodejs");
+
+detailsFormation("Interface Java FX/JDBC", "javafx");
+detailsFormation("SYMF", "symf");
+detailsFormation("ANGULAR", "angular");
+detailsFormation("IONIC", "ionic");
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////

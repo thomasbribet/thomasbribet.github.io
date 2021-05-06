@@ -57,19 +57,12 @@ dropdown('#dropdownMenuLogo', '#dropdownMenu div', 'visible');
 
 // FOOTER COPYRIGHT DATE
 
-var copyDate = function () {
-  var currentYear = new Date();
-  document.getElementById('copyDate').innerHTML = currentYear.getFullYear();
-}
-copyDate();
+// var copyDate = function () {
+//   var currentYear = new Date();
+//   document.getElementById('copyDate').innerHTML = currentYear.getFullYear();
+// }
+// copyDate();
 
-
-// FOOTER BACK TO TOP BTN
-
-// var pageName = location.hash;
-// var backToTop = document.querySelector('footer a');
-
-// backToTop.setAttribute("href", pageName);
 
 
 
